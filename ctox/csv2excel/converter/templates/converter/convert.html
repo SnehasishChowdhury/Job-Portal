@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV to Excel Converter</title>
+</head>
+<body>
+    <h1>CSV to Excel Converter</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="csv_file" accept=".csv" required>
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</html>
